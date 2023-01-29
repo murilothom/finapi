@@ -7,12 +7,20 @@ app.use(express.json())
 
 const customers = []
 
-/**
- * cpf: string
- * name: string
- * id: uuid
- * statement: []
- */
+// Middleware
+function verifyIfCpfIsAlreadyUsed(req, res, next) {
+  const { cpf } = req.params
+
+  const customer = customers.find(customer => customer.cpf === cpf)
+
+  if (!customer) {
+    return res.status(400).json({ error: 'Customer not found.' })
+  }
+
+  req.customer = customer
+
+  return next()
+}
 
 app.post('/account', (req, res) => {
   const { name, cpf } = req.body
@@ -33,13 +41,8 @@ app.post('/account', (req, res) => {
   return res.status(201).send()
 })
 
-app.get('/statement/:cpf', (req, res) => {
-  const { cpf } = req.params
-  const customer = customers.find(customer => customer.cpf === cpf)
-
-  if (!customer) {
-    return res.status(400).json({ error: 'Customer not found.' })
-  }
+app.get('/statement/:cpf', verifyIfCpfIsAlreadyUsed, (req, res) => {
+  const { customer } = req
 
   return res.json(customer.statement)
 })
