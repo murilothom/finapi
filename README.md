@@ -9,9 +9,9 @@ Onde será possível aprender e praticar alguns conceitos básicos do NodeJS
 - [x] Deve ser possível buscar o extrato bancário do Cliente.
 - [x] Deve ser possível Realizar um depósito.
 - [x] Deve ser possível realizar um saque.
-- [ ] Deve ser possível buscar o extrato bancário do cliente por data.
-- [ ] Deve ser possível atualizar dados da conta do cliente .
-- [ ] Deve ser possível obter dados da conta do cliente.
+- [x] Deve ser possível buscar o extrato bancário do cliente por data.
+- [x] Deve ser possível atualizar dados da conta do cliente .
+- [x] Deve ser possível obter dados da conta do cliente.
 - [ ] Deve ser possível deletar uma conta.
 - [ ] Deve ser possível obter o saldo da conta.
 
