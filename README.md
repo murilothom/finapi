@@ -8,7 +8,7 @@ Onde será possível aprender e praticar alguns conceitos básicos do NodeJS
 - [x] Deve ser possível Criar uma conta.
 - [x] Deve ser possível buscar o extrato bancário do Cliente.
 - [x] Deve ser possível Realizar um depósito.
-- [ ] Deve ser possível realizar um saque.
+- [x] Deve ser possível realizar um saque.
 - [ ] Deve ser possível buscar o extrato bancário do cliente por data.
 - [ ] Deve ser possível atualizar dados da conta do cliente .
 - [ ] Deve ser possível obter dados da conta do cliente.
@@ -20,6 +20,6 @@ Onde será possível aprender e praticar alguns conceitos básicos do NodeJS
 - [x] Não deve ser possível cadastrar uma conta com cpf já existente.
 - [x] Não deve ser possível fazer depósito em uma conta não existente.
 - [x] Não deve ser possível buscar extrato em uma conta não existente .
-- [ ] Não deve ser possível fazer um saque em uma conta não existente .
-- [ ] Não deve ser possível fazer saque quando o saldo for insuficiente .
+- [x] Não deve ser possível fazer um saque em uma conta não existente .
+- [x] Não deve ser possível fazer saque quando o saldo for insuficiente .
 - [ ] Não deve ser possível excluir uma conta não existente .
